@@ -255,7 +255,9 @@ def load_edgelist(file_, undirected=True):
       if undirected:
         G[y].append(x)
   
+  print >> sys.stderr, "Number of nodes (before make_consistent): {}".format(len(G.nodes()))
   G.make_consistent()
+  print >> sys.stderr, "Number of nodes (after make_consistent): {}".format(len(G.nodes()))
   return G
 
 

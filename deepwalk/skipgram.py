@@ -17,8 +17,8 @@ class Skipgram(Word2Vec):
         self.vocabulary_counts = None
 
         kwargs["min_count"] = kwargs.get("min_count", 1)
-        kwargs["workers"] = kwargs.get("workers", cpu_count())
-        kwargs["size"] = kwargs.get("size", 128)
+        kwargs["workers"]   = kwargs.get("workers", cpu_count())
+        kwargs["size"]      = kwargs.get("size", 128)
         kwargs["sentences"] = kwargs.get("sentences", None)
 
         if vocabulary_counts != None:

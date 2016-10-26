@@ -42,7 +42,7 @@ def load_graph(args):
 
 
 def process(args):
-  G         = load_graph(args)
+  G = load_graph(args)
   num_walks = len(G.nodes()) * args.number_walks
   data_size = num_walks * args.walk_length
   
